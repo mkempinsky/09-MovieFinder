@@ -17,6 +17,7 @@
             searchService.searchMovies(vm.movieSearch).then(function(response) {
                 console.log(response);
                 vm.searchResults = response.data;
+                vm.movieSearch= "";
 
             }, function(err) {
                 console.log(err);
