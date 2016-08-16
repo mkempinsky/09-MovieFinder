@@ -5,13 +5,24 @@
         .module('app')
         .controller('searchController', searchController);
 
-    Controller.$inject = ['dependencies'];
+    searchController.$inject = ['searchService'];
 
     /* @ngInject */
-    function searchController() {
+    function searchController(searchService) {
         var vm = this;
         vm.movieSearch= "";
-}
+        vm.searchResults = {};
+
+        vm.searchMovie = function() {
+            searchService.searchMovies(vm.movieSearch).then(function(response) {
+                console.log(response);
+                vm.searchResults = response.data;
+
+            }, function(err) {
+                console.log(err);
+            });
+        };
+    }
 
        
 })();
