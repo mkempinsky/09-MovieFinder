@@ -6,7 +6,7 @@
   "description": "Search for movies and look at details",
   "main": "index.html",
   "license": "MIT",
-  "homepage": "",
+  "homepage": "https://github.com/rdowdy/09-MovieFinder",
   "ignore": [
     "**/.*",
     "node_modules",
