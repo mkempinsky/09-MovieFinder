@@ -12,7 +12,7 @@
             controller: 'searchController as search'
           })
           .state('detail',{
-            url: '/details',
+            url: '/details?movieId',
             templateUrl: '/details/details.html',
             controller: 'detailsController as details'
           });
