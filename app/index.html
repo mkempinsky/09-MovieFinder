@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Movie Finder</title>
+  <link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet">
   <!-- bower:css -->
   <link rel="stylesheet" href="bower_components/materialize/bin/materialize.css" />
   <link rel="stylesheet" href="bower_components/animate.css/animate.css" />
@@ -14,15 +15,16 @@
   <!-- endinject -->
 </head>
 <body>
-
-<div class="container">
+<header>
 <h1>Movie Finder</h1>
+</header>
+<div class="container">
 <div class="row">
         <div class="section">
             <form>
                 <div class="input-field">
                     <label for="searchField">Search</label>
-                    <input type="text" id="searchField" required ng-model="userSearch" placeholder="star wars">
+                    <input type="text" id="searchField" required ng-model="userSearch">
                 </div>
                 <a ui-sref="search({movieSearch: userSearch})" class="btn">Search</a>
             </form>

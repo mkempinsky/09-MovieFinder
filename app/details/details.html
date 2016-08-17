@@ -1,7 +1,7 @@
-<div class="container animated slideInRight">
-	<h1>{{detail.movieDetails.Title}}</h1>
-		<img src="{{detail.movieDetails.Poster}}">
-		<h3>{{detail.movieDetails.Year}}{{detail.movieDetails.Rated}}{{detail.movieDetails.Runtime}}</h3>
-		<p>{{detail.movieDetails.Plot}}</p>
-		<p>{{detail.movieDetails.Actors}}</p>
+<div class="animated slideInRight">
+    <h1>{{detail.movieDetails.Title}}</h1>
+    <h4>{{detail.movieDetails.Year}} {{detail.movieDetails.Rated}} {{detail.movieDetails.Runtime}}</h4>
+    <img class="movieDetailsPoster" src="{{detail.movieDetails.Poster}}">
+    <p>{{detail.movieDetails.Plot}}</p>
+    <p><b>Actors:</b> {{detail.movieDetails.Actors}}</p>
 </div>

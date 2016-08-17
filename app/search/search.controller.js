@@ -13,7 +13,9 @@
         vm.movieSearch= $stateParams.movieSearch;
         vm.searchResults = {};
 
-        searchMovie();
+        if(vm.movieSearch != undefined && vm.movieSearch.length > 0) {
+            searchMovie();
+        }
 
         function searchMovie() {
             searchService.searchMovies(vm.movieSearch).then(function(response) {
