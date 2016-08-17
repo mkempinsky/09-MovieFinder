@@ -1,20 +1,10 @@
-<div class="container">
-    <div class="row">
-        <div class="section">
-            <form>
-                <div class="input-field">
-                    <label for="searchField">Search</label>
-                    <input type="text" id="searchField" required ng-model="search.movieSearch">
-                </div>
-                <button class="btn" ng-click="search.searchMovie()">Search</button>
-            </form>
-        </div>
-    </div>
+
+    
 
     <!-- search results -->
     <div class="row">
         <div class="section">
-            <div ng-repeat="item in search.searchResults.Search" class="card horizontal animated zoomIn col m-3 s-6 xs-6">
+            <div ng-repeat="item in search.searchResults.Search" class="card horizontal col m-3 s-6 xs-6">
                 <div class="card-image">
                     <img src="{{item.Poster}}" class="poster-height">
                 </div>
@@ -28,4 +18,3 @@
             </div>
         </div>
     </div>
-</div>

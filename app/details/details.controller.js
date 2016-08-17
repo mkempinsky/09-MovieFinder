@@ -5,7 +5,7 @@
         .module('app')
         .controller('detailController', detailController);
 
-    dletailController.$inject = ['$stateParams'];
+    detailController.$inject = ['$stateParams'];
 
     /* @ngInject */
     function detailController($stateParams) {
@@ -15,3 +15,4 @@
       }
 
 })();
+

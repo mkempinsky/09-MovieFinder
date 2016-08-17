@@ -7,7 +7,7 @@
 
         $stateProvider
           .state('search',{
-            url: '/search',
+            url: '/search?movieSearch',
             templateUrl: '/search/search.html',
             controller: 'searchController as search'
           })

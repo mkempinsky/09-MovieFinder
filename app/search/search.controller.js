@@ -5,13 +5,14 @@
         .module('app')
         .controller('searchController', searchController);
 
-    searchController.$inject = ['searchService'];
+    searchController.$inject = ['searchService', '$stateParams'];
 
     /* @ngInject */
-    function searchController(searchService) {
+    function searchController(searchService, $stateParams) {
         var vm = this;
-        vm.movieSearch= "";
+        vm.movieSearch= $stateParams.movieSearch;
         vm.searchResults = {};
+
 
         vm.searchMovie = function() {
             searchService.searchMovies(vm.movieSearch).then(function(response) {
@@ -23,7 +24,10 @@
                 console.log(err);
             });
         };
+
+     vm.searchMovie();
     }
+
 
        
 })();
