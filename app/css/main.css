@@ -1,5 +1,6 @@
 body {
     font-family: "Droid Sans", sans-serif;
+
 }
 
 header {
@@ -43,6 +44,7 @@ img.movieDetailsPoster {
 
 
 
+
 .card{
 	height: 250px;
 	width: 300px;
@@ -58,3 +60,26 @@ img.movieDetailsPoster {
 .card-titles{
 	font-size: 1.25em;
 }
+
+.footer, .push {
+    font-size: 1em;
+    clear: both;
+    text-align: center;
+    background-color: rgba(0, 0, 0, .7);
+    height: 84px;
+}
+
+.wrapper{
+    min-height: calc(100vh-84px);
+    margin: 25px auto 10px;
+    padding: 0 10px 0px;
+}
+
+.clearfix:after { 
+  content: "."; 
+  visibility: hidden; 
+  display: block; 
+  height: 0; 
+  clear: both;
+}
+

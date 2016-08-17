@@ -20,23 +20,36 @@
     <header>
         <h1>Movie Finder</h1>
     </header>
-    <div class="container">
-        <div class="row">
-            <div class="section" ng-controller="globalSearchController as globalSearch">
-                <form>
-                    <div class="input-field">
-                        <label for="searchField">Search</label>
-                        <input type="text" id="searchField" ng-model="globalSearch.userSearch">
-                    </div>
-                    <button ui-sref="search({movieSearch: globalSearch.userSearch})" class="btn">Search</button>
-                    <button class="btn clearBtn right" ng-click="globalSearch.userSearch = ''">Clear</button>
-                </form>
-            </div>
-        </div>
-        <!-- search box -->
-        <div ui-view>
+    <div class="wrapper">
+      <div class="container">
+          <div class="row">
+              <div class="section" ng-controller="globalSearchController as globalSearch">
+                  <form>
+                      <div class="input-field">
+                          <label for="searchField">Search</label>
+                          <input type="text" id="searchField" ng-model="globalSearch.userSearch">
+                      </div>
+                      <button ui-sref="search({movieSearch: globalSearch.userSearch})" class="btn">Search</button>
+                      <button class="btn clearBtn right" ng-click="globalSearch.userSearch = ''">Clear</button>
+                  </form>
+              </div>
+          </div>
+          <!-- search box -->
+          <div ui-view class="clearfix">
+          </div>
         </div>
     </div>
+   <div>
+   </div>
+   <div class="footer">
+     
+     <footer>
+    
+      </footer>
+  </div>
+
+
+
     <!-- bower:js -->
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
@@ -50,6 +63,9 @@
     <script src="search/search.controller.js"></script>
     <script src="search/search.service.js"></script>
     <!-- endinject -->
+
+
 </body>
+
 
 </html>
