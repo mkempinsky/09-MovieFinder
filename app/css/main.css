@@ -1,0 +1,13 @@
+.card{
+	max-width: 30%;
+	margin-left: 2.5%;
+}
+
+.poster-height{
+	min-height: 250px;
+
+}
+
+.card-titles{
+	font-size: 1.25em;
+}
