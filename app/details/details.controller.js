@@ -5,13 +5,20 @@
         .module('app')
         .controller('detailController', detailController);
 
-    detailController.$inject = ['$stateParams'];
+    detailController.$inject = ['$stateParams', 'searchService'];
 
     /* @ngInject */
-    function detailController($stateParams) {
+    function detailController($stateParams, searchService) {
         var vm = this;
 
         vm.movieId = $stateParams.movieId;
+        vm.movieDetails = {};
+
+        searchService.getMovieDetails(vm.movieId).then(function(response) {
+            vm.movieDetails = response.data;
+        }, function(err) {
+            console.log(err);
+        });
       }
 
 })();

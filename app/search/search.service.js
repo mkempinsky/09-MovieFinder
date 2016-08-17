@@ -11,6 +11,9 @@
         return {
             searchMovies: function(movie) {
                 return $http.get("https://omdbapi.com/?s=" + movie);
+            },
+            getMovieDetails: function(movieId) {
+                return $http.get("https://omdbapi.com/?i=" + movieId);
             }
         };
     }

@@ -13,8 +13,9 @@
         vm.movieSearch= $stateParams.movieSearch;
         vm.searchResults = {};
 
+        searchMovie();
 
-        vm.searchMovie = function() {
+        function searchMovie() {
             searchService.searchMovies(vm.movieSearch).then(function(response) {
                 console.log(response);
                 vm.searchResults = response.data;
@@ -23,9 +24,8 @@
             }, function(err) {
                 console.log(err);
             });
-        };
+        }
 
-     vm.searchMovie();
     }
 
 
