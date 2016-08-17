@@ -26,9 +26,10 @@
                 <form>
                     <div class="input-field">
                         <label for="searchField">Search</label>
-                        <input type="text" id="searchField" required ng-model="globalSearch.userSearch">
+                        <input type="text" id="searchField" ng-model="globalSearch.userSearch">
                     </div>
                     <button ui-sref="search({movieSearch: globalSearch.userSearch})" class="btn">Search</button>
+                    <button class="btn clearBtn right" ng-click="globalSearch.userSearch = ''">Clear</button>
                 </form>
             </div>
         </div>

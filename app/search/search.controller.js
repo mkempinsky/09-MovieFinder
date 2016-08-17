@@ -14,12 +14,11 @@
         vm.searchResults = {};
         vm.clearMovie = clearMovie;
 
-        if(vm.movieSearch != undefined && vm.movieSearch.length > 0) {
+        if(vm.movieSearch !== undefined && vm.movieSearch.length > 0) {
             searchMovie();
         }
 
         function clearMovie() {
-            alert('calling clear search');
             $rootScope.$broadcast('clearSearch');
         }
 

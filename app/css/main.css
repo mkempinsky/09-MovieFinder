@@ -27,6 +27,14 @@ button.btn:hover {
    background: #b70000; 
 }
 
+button.clearBtn {
+    background: #777;
+}
+
+button.clearBtn:hover {
+    background: #666;
+}
+
 img.movieDetailsPoster {
     float: left;
     margin-right: 25px;

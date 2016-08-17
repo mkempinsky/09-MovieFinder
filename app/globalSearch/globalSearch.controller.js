@@ -11,7 +11,6 @@
     function globalSearchController($rootScope) {
         var vm = this;
         $rootScope.$on('clearSearch', function() {
-        	alert('alert receied!');
         	vm.userSearch = '';
         });
     }
