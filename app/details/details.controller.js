@@ -10,6 +10,8 @@
     /* @ngInject */
     function detailController($stateParams) {
         var vm = this;
+
+        vm.movieId = $stateParams.movieId;
       }
 
 })();

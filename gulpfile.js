@@ -17,7 +17,7 @@ gulp.task('watch', function() {
 });
 
 gulp.task('inject', function() {
-    var sources = gulp.src(['app/css/normalize.css', './app/css/**/*.css', 'app/js/app.module.js', 'app/js/weather.service.js', './app/js/**/*.js']);
+    var sources = gulp.src(['./app/css/**/*.css', 'app/app.module.js', './app/details/**/*.js', './app/search/**/*.js']);
 
     gulp.src('./app/index.html')
         .pipe(wiredep())

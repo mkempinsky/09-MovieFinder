@@ -14,7 +14,7 @@
           .state('detail',{
             url: '/details?movieId',
             templateUrl: '/details/details.html',
-            controller: 'detailsController as details'
+            controller: 'detailController as detail'
           });
 
       });
