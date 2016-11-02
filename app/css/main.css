@@ -1,17 +1,22 @@
 body {
-    font-family: "Droid Sans", sans-serif;
-
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background: linear-gradient(-90deg, rgba(120,2,6, .9), rgba(6,17,97, .9)),
+    url('../img/grid.png'); 
 }
 
-header {
-    padding: 15px 0;
-    text-align: center;
-    background: #cc0000;
+main {
+    flex: 1 0 auto;
 }
 
-header h1 {
-    font-weight: bolder;
-    font-size: 5em;
+h1 {
+    font-family: 'Pacifico', cursive;
+    color: #fff;
+    font-size: 4em;
+    text-align: left;
+    padding-left: 5%;
+    text-shadow: 1px 2px 3px #000;
 }
 
 .input-field input[type=text]:focus {
@@ -19,11 +24,6 @@ header h1 {
     box-shadow: 0 1px 0 0 #cc0000;
 }
 
-button.btn {
-    background: #cc0000;
-    color: black;
-    font-weight: bold;
-}
 
 button.btn:hover {
    background: #b70000; 
@@ -41,22 +41,11 @@ img.movieDetailsPoster {
     float: left;
     margin-right: 25px;
 }
-
-
-.clearfix:after {
-     visibility: hidden;
-     display: block;
-     font-size: 0;
-     content: " ";
-     clear: both;
-     height: 0;
- }
+.detailsPage{
+    background-color: #fff;
+    width: 100%;
+}
  
-.clearfix { display: inline-block; }
-/* start commented backslash hack \*/
-* html .clearfix { height: 1%; }
-.clearfix { display: block; }
-/* close commented backslash hack */
 
 .card{
 	height: 250px;
@@ -81,18 +70,7 @@ img.movieDetailsPoster {
     background-color: rgba(0, 0, 0, .7);
     height: 84px;
 }
-
-.wrapper{
-    min-height: calc(100vh-84px);
-    margin: 25px auto 10px;
-    padding: 0 10px 0px;
-}
-
-.clearfix:after { 
-  content: "."; 
-  visibility: hidden; 
-  display: block; 
-  height: 0; 
-  clear: both;
+.search-btn {
+    background: linear-gradient(-90deg, #FF8C19, rgba(6,17,97, .9))
 }
 

@@ -16,6 +16,7 @@
 
         searchService.getMovieDetails(vm.movieId).then(function(response) {
             vm.movieDetails = response.data;
+            console.log(response);
         }, function(err) {
         	Materialize.toast('Error getting movie details',4000);
             console.log(err);

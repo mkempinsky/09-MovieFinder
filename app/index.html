@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Movie Finder</title>
-    <link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
     <!-- bower:css -->
     <link rel="stylesheet" href="bower_components/materialize/bin/materialize.css" />
     <link rel="stylesheet" href="bower_components/animate.css/animate.css" />
@@ -29,18 +29,19 @@
                           <label for="searchField">Search</label>
                           <input type="text" id="searchField" ng-model="globalSearch.userSearch">
                       </div>
-                      <button ui-sref="search({movieSearch: globalSearch.userSearch})" class="btn">Search</button>
+                      <button ui-sref="search({movieSearch: globalSearch.userSearch})" class="btn search-btn">Search</button>
                       <button class="btn clearBtn right" ng-click="globalSearch.userSearch = ''">Clear</button>
                   </form>
               </div>
           </div>
           <!-- search box -->
-          <div ui-view class="clearfix">
+          <div ui-view>
           </div>
         </div>
     </div>
    <div>
    </div>
+   <main></main>
    <div class="footer">
      
      <footer>
